@@ -1,14 +1,13 @@
 import React from 'react'
 import './App.css';
-import Hookcounter from './Component/Hookcounter';
-import HookCounter2 from './Component/HookCounter2';
-import Hookcounter3 from './Component/Hookcounter3';
+import Array4hook from './Component/Array4hook';
+
 
 
 function App() {
   return (
     <div className="App">
-      <Hookcounter3></Hookcounter3>
+      <Array4hook></Array4hook>
     </div>
   );
 }
