@@ -4,19 +4,21 @@ function Incorrentdependency() {
   
      const[count,setCount] = useState(0)
 
+     const thick = (prevCount)=>{
+        setCount(prevCount => prevCount+1)
+     }
+
     useEffect(()=>{
         const interval = setInterval(thick,1000)
         return () =>{
             clearInterval(interval)
         }
-    },[count])
+    },[])
 
 
 
 
-     const thick = ()=>{
-        setCount(count+1)
-     }
+    
 
   return (
     <div>
