@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css';
-import Array4hook from './Component/Array4hook';
+import Effecthook from './Component/Effecthook';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Array4hook></Array4hook>
+   <Effecthook></Effecthook>
     </div>
   );
 }
