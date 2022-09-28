@@ -12,8 +12,11 @@ export class Refclass extends Component {
     componentDidMount(){
         document.title =`clicked ${this.state.count} times`
     }
-    componentDidUpdate(){
-       console.log("updating documnet titile");
+    componentDidUpdate(prevProps,prevState){
+      if(prevState.count !== this.state.count){////condition la podu
+        console.log("updating documnet titile");
+      }
+       
         document.title =`clicked ${this.state.count} times`
         
     }
@@ -21,7 +24,7 @@ export class Refclass extends Component {
   render() {
     return (
       <div>
-        <input type="text" value={this.state.name} onChange={e=>{this.setState({name:e.target.value})}} />
+        <input type="text" placeholder="i m class"value={this.state.name} onChange={e=>{this.setState({name:e.target.value})}} />
         <button onClick={()=>this.setState({count:this.state.count+1})}>clicked {this.state.count} times</button>
       </div>
     )
