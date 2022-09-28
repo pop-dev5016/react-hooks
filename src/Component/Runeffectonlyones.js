@@ -16,6 +16,12 @@ function Runeffectonlyones() {
   useEffect(()=>{
     console.log("useeffect called");
     window.addEventListener("mousemove",logMousePosition)
+
+    return ()=>{
+        console.log("component unmounted");
+        window.removeEventListener("mousemove",logMousePosition)
+
+    }
   },[])
 
 
