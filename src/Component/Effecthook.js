@@ -14,4 +14,4 @@ function Effecthook() {
    )
  }
 
-export default Effecthook
+ export default Effecthook
