@@ -2,7 +2,7 @@ import React,{useState}from 'react'
 import UseCounter from './hooks/UseCounter'
 
 function Counter22() {
-   const [count,increment,Decncrement,Reset]=UseCounter()
+   const [count,increment,Decncrement,Reset]=UseCounter(10)
   return (
     <div>
         <h2>count = {count}</h2>
