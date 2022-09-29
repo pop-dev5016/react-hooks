@@ -1,12 +1,12 @@
 import React ,{useState} from 'react'
 
-function UseCounter(initialCount=0) {
-    const [count,setCount] = useState(initialCount) 
+function UseCounter(initialCount=0,value) {
+    const [count,setCount] = useState(initialCount ) 
     const increment = ()=>{
-        setCount(prevCount=>prevCount+1)
+        setCount(prevCount=>prevCount+value)
     }
     const Decncrement = ()=>{
-        setCount(prevCount=>prevCount-1)
+        setCount(prevCount=>prevCount-value)
     }
     const Reset = ()=>{
         setCount(0)
