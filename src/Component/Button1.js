@@ -1,7 +1,7 @@
 import React, { Children } from 'react'
 
 function Button1({handler, children}) {
-    console.log("3/5 rendered - ",children);
+    console.log("rendered button - ",children);
   return (
     <div>
         <button onClick={handler}>
@@ -11,4 +11,4 @@ function Button1({handler, children}) {
   )
 }
 
-export default Button1
+export default React.memo(Button1)

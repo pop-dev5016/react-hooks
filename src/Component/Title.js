@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Title() {
-    console.log("1.title rendered")
+    console.log("title rendered")
   return (
     
     <div>
@@ -10,4 +10,4 @@ function Title() {
   )
 }
 
-export default Title
+export default React.memo(Title)
