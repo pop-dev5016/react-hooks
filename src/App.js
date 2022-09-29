@@ -1,6 +1,7 @@
 import React ,{useReducer} from 'react'
 import './App.css';
-import Memocount from './Component/Memocount';
+import FocusInput from './Component/FocusInput';
+
 
 
 
@@ -9,7 +10,7 @@ function App() {
   return (
    
      <div className="App">
-       <Memocount></Memocount>
+      <FocusInput></FocusInput>
      </div>
    
   ) 
