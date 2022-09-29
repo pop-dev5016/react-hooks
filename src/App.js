@@ -1,6 +1,7 @@
 import React ,{useReducer} from 'react'
 import './App.css';
-import Parent from './Component/Parent';
+import Memocount from './Component/Memocount';
+
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
    
      <div className="App">
-      <Parent></Parent>
+       <Memocount></Memocount>
      </div>
    
   ) 
